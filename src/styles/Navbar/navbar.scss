@@ -1,0 +1,51 @@
+.navbar-main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: #15265c;
+  // border: 1px solid black;
+  padding: 10px 20px;
+  font-size: 18px;
+  // margin: 3px;
+  z-index: 0;
+
+  .navbar-left {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .navbar-middle {
+    flex-grow: 1;
+
+    .searchbar {
+      margin-left: 20px;
+
+      input[type="text"] {
+        padding: 5px;
+      }
+    }
+  }
+
+  .navbar-right {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      margin: 0px !important;
+      align-items: center;
+      align-content: center;
+
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        .connect-btn {
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
