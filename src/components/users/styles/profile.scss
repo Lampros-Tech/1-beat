@@ -1,0 +1,101 @@
+// $green-color: #2ee09a;
+$green-color: #ff0083;
+
+.profile-main-container {
+  padding-top: 5rem;
+  max-width: 60%;
+  width: 60%;
+  margin: auto;
+  height: 100vh;
+
+  .profile-first-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    // margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #2c3033;
+
+    .profile-image {
+      //   margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding-right: 3rem;
+
+      #profile-image-id {
+        margin: 0;
+        // border: 5px solid $green-color;
+        // border-radius: 50%;
+      }
+    }
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 2rem;
+        border-left: 4px solid $green-color;
+        padding-left: 20px;
+        margin: 0;
+      }
+
+      p {
+        text-align: left;
+      }
+      button.profile-btn {
+        margin: 1rem 0;
+        background: none;
+        border: 1px solid #ff0083;
+        border-radius: 10px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+      }
+      button.profile-btn:hover {
+        background: #ff0083;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+  .profile-second-section {
+    margin-top: 20px;
+    button.profile-second-btns {
+      background: none;
+      border: none;
+      color: #ff0083;
+      font-size: 1.5rem;
+      font-weight: 700;
+      padding: 0.5rem 1rem;
+      margin-right: 1rem;
+    }
+    button.profile-second-btns:last-of-type {
+      margin-right: 0;
+    }
+    button.profile-second-btns:hover {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    button.active {
+      border-bottom: 2px solid #ff0083;
+    }
+    button.active:hover {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-bottom: 2px solid #ff0083;
+    }
+  }
+}
