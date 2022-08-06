@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+.Navbar
+{
+    width: 99.9%;
+    height: 30px;
+    border: 1px #000 solid;
+    position: absolute;
+    background-color: #030303;
+}
+.anim
+{
+    background-color: #030303;
+    height: calc(100vh - 152px) !important;   
+}
+.navbar-main
+{
+    background-color: #030303;
+}
+.absolute
+{
+    position:absolute;
+    width: 100%;
+}
+.herotext
+{
+    width: 100%;
+    padding-top:35px ;
+    color: #fdfd;
+    font-size: 10rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.flex
+{
+    display: flex;
+}
+.Animation
+{
+    background-color: #fff;
+}
+.tag-line
+{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.other
+{
+    height: 100vh;
+    background-color: #030303;
+}
+.object
+{
+    top:329px;
+    top: 329px;
+    left: -257.8944396972656px;
+    width: 509px;
+    height: 514px;
+    transform: matrix(-0.05, 1, -1, -0.05, 0, 0);
+/* UI Properties */
+    background: transparent url('') 0% 0% no-repeat padding-box;
+    opacity: 0.58;
+}
+/*
+
+Color Pallete
+  #EF84F5
+  #15265C
+  #2EE09A
+  #FFFFFF
+*/

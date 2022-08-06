@@ -1,0 +1,64 @@
+.navbar-main {
+
+  display: flex;
+  width: 100%;
+//   position: fixed;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0;
+  z-index: 10 !important;
+
+  .navbar-left {
+      font-weight: 700;
+      font-size: 20px;
+
+      .navbar-logo{
+          font-family: Inconsolata;
+      }
+  }
+
+  .navbar-middle {
+      flex-grow: 1;
+
+      .searchbar {
+          margin-left: 20px;
+
+          input[type=text] {
+              padding: 5px;
+          }
+      }
+  }
+
+  .navbar-right {
+
+      ul {
+          list-style: none;
+          display: flex;
+          gap: 10px;
+          margin: 0px !important;
+          align-items: center;
+          align-content: center;
+
+          li {
+              font-family: Inconsolata;
+              &.active{
+                  background-color: white;
+                  color: black !important;
+              }
+
+              a {
+                  text-decoration: none;
+                  color: inherit;
+              }
+
+              .connect-btn {
+                  font-size: 16px;
+                  cursor: pointer;
+              }
+          }
+      }
+  }
+}
