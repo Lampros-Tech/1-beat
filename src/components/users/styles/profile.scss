@@ -13,9 +13,14 @@ $green-color: #ff0083;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding: 30px;
     // margin-bottom: 50px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #2c3033;
+    padding-bottom: 30px;
+    // border-bottom: 2px solid #2c3033;
+    border-radius: 20px;
+    background: rgba(35, 35, 35, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     button.profile-edit-button {
       margin: 1rem 0;
