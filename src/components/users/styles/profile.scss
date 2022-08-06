@@ -1,5 +1,15 @@
 // $green-color: #2ee09a;
 $green-color: #ff0083;
+$gradient-color: linear-gradient(
+  90deg,
+  #ff3ba0,
+  #eb0079,
+  #ff0083,
+  #ffc4e2,
+  #ff3ba0,
+  #eb0079,
+  #b1005b
+);
 
 .profile-main-container {
   padding-top: 2rem;
@@ -24,18 +34,28 @@ $green-color: #ff0083;
 
     button.profile-edit-button {
       margin: 1rem 0;
-      background: none;
+      // background: none;
       border: 1px solid #ff0083;
       border-radius: 10px;
       color: white;
       font-size: 0.8rem;
       font-weight: 600;
       padding: 0.5rem 1rem;
+
+      background: $gradient-color;
+      background-size: 600% 200%;
+      animation: gradient 4s linear infinite;
+      animation-direction: alternate;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
     }
     button.profile-edit-button:hover {
-      background: #ff0083;
-      border-radius: 10px;
-      color: white;
       cursor: pointer;
     }
     .profile-first-section-inside-one {
@@ -85,13 +105,16 @@ $green-color: #ff0083;
       }
       button.profile-btn {
         margin: 1rem 0;
-        background: none;
         border: 1px solid #ff0083;
         border-radius: 10px;
         color: white;
         font-size: 0.8rem;
         font-weight: 600;
         padding: 0.5rem 1rem;
+        background: $gradient-color;
+        background-size: 600% 200%;
+        animation: gradient 4s linear infinite;
+        animation-direction: alternate;
       }
       button.profile-btn:hover {
         background: #ff0083;

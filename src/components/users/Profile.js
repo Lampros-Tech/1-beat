@@ -4,16 +4,18 @@ import ProfileCreateNft from "./generalblocks/ProfileCreateNft";
 import ProfileNfts from "./generalblocks/ProfileNfts";
 import ProfileStreamings from "./generalblocks/ProfileStreamings";
 import "./styles/profile.scss";
+import EditProfile from "./generalblocks/EditProfile";
 
 function Profile() {
   const [imgSrc, setImgSrc] = useState(logo);
   const [showStreamings, setStreamings] = useState(true);
   const [showNFTs, setNFTs] = useState(false);
   const [showCreateNFTs, setCreateNFTs] = useState(false);
-  // const [buttonPopup, setButtonPopup] = useState(false);
+  const [buttonPopup, setButtonPopup] = useState(false);
 
   return (
     <>
+      {buttonPopup && <EditProfile closeModal={setButtonPopup} />}
       <section className="profile-main-container">
         <section className="profile-first-section">
           <div className="profile-first-section-inside-one">
