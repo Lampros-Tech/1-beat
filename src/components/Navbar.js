@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar/navbar.scss";
-import logo from "../styles/onebeat_logo.png";
+import logo from "../styles/logo.png";
 function Navbar() {
   return (
     <>
