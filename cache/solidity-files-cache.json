@@ -35,6 +35,41 @@
       "artifacts": [
         "OneBeat"
       ]
+    },
+    "C:\\Users\\lajja\\Desktop\\1Beat_V1\\1-beat\\contracts\\OneBeat.sol": {
+      "lastModificationDate": 1659795167798,
+      "contentHash": "be4c21e8038288a42733304d6c0afd0e",
+      "sourceName": "contracts/OneBeat.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OneBeat"
+      ]
     }
   }
 }
