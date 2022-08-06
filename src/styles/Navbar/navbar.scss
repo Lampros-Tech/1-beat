@@ -1,52 +1,64 @@
 .navbar-main {
+
   display: flex;
+  width: 100%;
+//   position: fixed;
   align-items: center;
   align-content: center;
-  // background-color: #15265c;
-  // background-color: #151515;
-  // border: 1px solid black;
+  color: #fff;
   padding: 10px 20px;
   font-size: 18px;
-  // margin: 3px;
-  z-index: 0;
+  margin: 0;
+  z-index: 10 !important;
 
   .navbar-left {
-    font-weight: 700;
-    font-size: 20px;
+      font-weight: 700;
+      font-size: 20px;
+
+      .navbar-logo{
+          font-family: Inconsolata;
+      }
   }
 
   .navbar-middle {
-    flex-grow: 1;
+      flex-grow: 1;
 
-    .searchbar {
-      margin-left: 20px;
+      .searchbar {
+          margin-left: 20px;
 
-      input[type="text"] {
-        padding: 5px;
+          input[type=text] {
+              padding: 5px;
+          }
       }
-    }
   }
 
   .navbar-right {
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 10px;
-      margin: 0px !important;
-      align-items: center;
-      align-content: center;
 
-      li {
-        a {
-          text-decoration: none;
-          color: white;
-        }
+      ul {
+          list-style: none;
+          display: flex;
+          gap: 10px;
+          margin: 0px !important;
+          align-items: center;
+          align-content: center;
 
-        .connect-btn {
-          font-size: 16px;
-          cursor: pointer;
-        }
+          li {
+              font-family: Inconsolata;
+              &.active{
+                  background-color: white;
+                  color: black !important;
+              }
+
+              a {
+                  text-decoration: none;
+                  color: inherit;
+              }
+
+              .connect-btn {
+                  font-size: 16px;
+                  cursor: pointer;
+              }
+          }
       }
-    }
   }
 }
