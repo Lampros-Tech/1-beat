@@ -1,5 +1,6 @@
 import React from "react";
 import "../stream/AllStream.scss";
+import img from "../stream/man.png";
 
 function AllStreams() {
   return (
@@ -24,7 +25,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -44,7 +45,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -64,7 +65,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -84,7 +85,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -104,7 +105,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -124,7 +125,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -144,7 +145,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -164,7 +165,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -184,7 +185,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -204,7 +205,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -224,7 +225,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
@@ -244,7 +245,7 @@ function AllStreams() {
             </div>
             <div className="stream-user">
               <div className="stream-img-name">
-                <img src="https://picsum.photos/200" alt="" />
+                <img src={img} alt="" />
                 <span>user name</span>
               </div>
             </div>
