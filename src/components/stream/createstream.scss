@@ -9,20 +9,18 @@
   //   padding: 30px;
 
   .cs-left-container {
-    width: 60%;
+    min-width: 60%;
+    padding-top: 30px;
     video.cs-video {
       width: 100%;
     }
   }
   .cs-right-container {
-    formfield {
-      padding: 5%;
-      display: block;
-    }
+    padding: 30px;
+    text-align: left;
   }
 }
-.space-to-upload-image
-{
+.space-to-upload-image {
   width: 100px;
   height: 100px;
   background-color: #fff;

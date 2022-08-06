@@ -2,8 +2,7 @@ import React from "react";
 import "./MakeSchedule.scss";
 import { useDropzone } from "react-dropzone";
 import { useState } from "react";
-import pic from "../schedulestreams/Wavy_Bus-15_Single-02_prev_ui.png";
-
+import pic from "./loginbg1.png"
 function MakeSchedule() {
   const [yourImage, setImage] = useState([]);
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -19,10 +18,17 @@ function MakeSchedule() {
     },
   });
 
+  
+
   return (
     <div className="App">
-      <div className="image"></div>
+       <div className="image-hero">
+        <img src={pic} alt=""/>
+      
+    
+    </div>
       <div class="container">
+       
         <h1>FORM</h1>
 
         <form>
@@ -36,7 +42,7 @@ function MakeSchedule() {
               {isDragActive ? (
                 <p>Drag 'n' drop some files here,</p>
               ) : (
-                <p> or click to select files</p>
+                <p> click here to upload cover Photo</p>
               )}
             </div>
             <div>
@@ -77,6 +83,7 @@ function MakeSchedule() {
               <div class="column">
                 {/* <label for="name">Input</label> */}
                 <input type="text" id="name" placeholder="Your Title here" />
+                
               </div>
             </div>
           </div>

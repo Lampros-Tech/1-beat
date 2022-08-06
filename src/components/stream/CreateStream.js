@@ -178,7 +178,7 @@ function CreateStream({ account, contract }) {
             <formfield>
               <label>
                 {" "}
-                Cover Image for stream
+                Choose cover image for stream
                 {heroImage ? (
                   <>
                     <img src={uploaded_image} className="uploaded_image" />
