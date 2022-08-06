@@ -1,0 +1,31 @@
+.main{
+    width:70%;
+    margin: auto;
+}
+
+.card-container{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+}
+.main-card{
+    display: flex;
+    padding: 20px;
+    background-color: lightcyan;
+    border-radius: 5px;
+
+}
+
+.date-time{
+    flex-direction: row;
+}
+.book-button{
+    border: none;
+    padding: 10px 20px;
+    background: #100720;
+    color: #ffffff;
+    border-radius: 3px;
+}
