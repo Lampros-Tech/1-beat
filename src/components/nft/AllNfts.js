@@ -1,5 +1,6 @@
 import React from "react";
 import "../nft/AllNfts.scss";
+import img from "../nft/man.png";
 
 function AllNfts() {
   return (
@@ -22,7 +23,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" alt="Buy Now">
@@ -40,7 +41,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
@@ -58,7 +59,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
@@ -76,7 +77,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
@@ -94,7 +95,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
@@ -112,7 +113,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
@@ -130,7 +131,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
@@ -148,7 +149,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
@@ -166,7 +167,7 @@ function AllNfts() {
               </video>
               <div className="nft-user">
                 <div className="nft-img-name">
-                  <img src="https://picsum.photos/200" alt="" />
+                  <img src={img} alt="" />
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">

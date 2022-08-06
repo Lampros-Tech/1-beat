@@ -27,7 +27,7 @@
 }
 .nft-content {
   width: auto;
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
   // border: 1px solid black;
   margin: 20px;
   padding: 30px;
@@ -53,18 +53,27 @@
   border-radius: 50%;
   height: 40px;
 }
+.nft-user button:hover {
+  background-color: #ff0083;
+}
+.nft-user button {
+  color: white;
+}
 
 .nft-content button {
   width: 60px;
   height: 30px;
   margin-top: 5px;
   border-radius: 10px;
+  background-color: #232323;
   border-color: #ff0083;
   font-size: small;
 }
-.nft-button {
-  display: flex;
-}
+// .nft-button {
+//   display: flex;
+//   color: white;
+// }
+
 .nft-img-name {
   display: flex;
   align-items: center;

@@ -24,12 +24,12 @@
 }
 .stream-content {
   width: 250px;
-  background-color: whitesmoke;
+  // background-color: whitesmoke;
   // border: 1px solid black;
   margin: 40px;
   // padding: 30px;
   padding-bottom: 10px;
-  border-radius: 6px;
+  border-radius: 7px;
 }
 .stream-img-main {
   margin: 0px;
@@ -42,6 +42,7 @@
   width: 100%;
   max-height: 100%;
   display: block;
+  border-radius: 2px;
 }
 .stream-user {
   display: flex;
@@ -54,6 +55,7 @@
 }
 .stream-img-name {
   display: flex;
+  // color: black;
   align-items: center;
   align-content: space-around;
   flex-direction: row;
