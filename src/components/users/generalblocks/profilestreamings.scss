@@ -1,0 +1,71 @@
+.ps-main-container {
+  padding-top: 1.5rem;
+  max-width: 100%;
+}
+
+.ps-grid-container {
+  padding-top: 1rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-bottom: 1rem;
+}
+.ps-grid-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  img {
+    border-radius: 20px;
+  }
+  h3 {
+    text-align: left;
+    margin: 0%;
+    padding: 5% 0%;
+  }
+  .ps-nft-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    .ps-nft-div-inside-one {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    button.ps-nfts-buy-button {
+      margin: 0.7rem 0;
+      background: white;
+      border: none;
+      border-radius: 5px;
+      color: #232323;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+    }
+    button.ps-nfts-buy-button:hover {
+      background: #ff0083;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  p {
+    padding: 5% 0%;
+    margin: 0%;
+    color: #a9a9a9;
+  }
+  h6 {
+    margin: 0%;
+    padding: 5% 0%;
+    font-size: medium;
+    font-weight: 400;
+    text-align: left;
+  }
+}

@@ -2,28 +2,47 @@
 $green-color: #ff0083;
 
 .profile-main-container {
-  padding-top: 5rem;
-  max-width: 60%;
-  width: 60%;
+  padding-top: 2rem;
+  max-width: 70%;
+  width: 70%;
   margin: auto;
-  height: 100vh;
+  height: auto;
 
   .profile-first-section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     // margin-bottom: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     border-bottom: 2px solid #2c3033;
 
+    button.profile-edit-button {
+      margin: 1rem 0;
+      background: none;
+      border: 1px solid #ff0083;
+      border-radius: 10px;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+    }
+    button.profile-edit-button:hover {
+      background: #ff0083;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+    .profile-first-section-inside-one {
+      display: flex;
+    }
     .profile-image {
       //   margin: auto;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      padding-right: 3rem;
+      padding-right: 4rem;
 
       #profile-image-id {
         margin: 0;
@@ -39,10 +58,21 @@ $green-color: #ff0083;
       align-items: flex-start;
 
       h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         border-left: 4px solid $green-color;
         padding-left: 20px;
         margin: 0;
+      }
+
+      .profile-nft-info {
+        font-size: 1rem;
+        // padding: 1rem 0;
+        font-weight: 600;
+        padding: 5% 0;
+        p {
+          margin: 0%;
+          padding: 5% 0;
+        }
       }
 
       p {
@@ -54,8 +84,8 @@ $green-color: #ff0083;
         border: 1px solid #ff0083;
         border-radius: 10px;
         color: white;
-        font-size: 1rem;
-        font-weight: 700;
+        font-size: 0.8rem;
+        font-weight: 600;
         padding: 0.5rem 1rem;
       }
       button.profile-btn:hover {
@@ -68,13 +98,15 @@ $green-color: #ff0083;
   }
   .profile-second-section {
     margin-top: 20px;
+
     button.profile-second-btns {
       background: none;
       border: none;
-      color: #ff0083;
-      font-size: 1.5rem;
+      color: white;
+      font-size: 1rem;
       font-weight: 700;
-      padding: 0.5rem 1rem;
+      // padding: 0.5rem 1rem;
+      padding: 0 1rem 1rem 1rem;
       margin-right: 1rem;
     }
     button.profile-second-btns:last-of-type {
@@ -83,17 +115,18 @@ $green-color: #ff0083;
     button.profile-second-btns:hover {
       background: none;
       border: none;
-      color: white;
+      color: #ff0083;
       cursor: pointer;
     }
 
     button.active {
+      color: #ff0083;
       border-bottom: 2px solid #ff0083;
     }
     button.active:hover {
       background: none;
       border: none;
-      color: white;
+      color: #ff0083;
       cursor: pointer;
       border-bottom: 2px solid #ff0083;
     }
