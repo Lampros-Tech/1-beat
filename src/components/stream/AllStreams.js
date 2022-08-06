@@ -30,7 +30,7 @@ function AllStreams() {
               </div>
             </div>
             <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
+              <h4>Where we starting that and didn’t</h4>
             </div>
             <div className="stream-date">
               <span>Date:22/8/2022</span>
