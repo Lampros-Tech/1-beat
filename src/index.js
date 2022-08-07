@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import "./index.css";
 import App from "./App";
 import "./styles/fonts/Mars/Mars Bold.ttf";
+import "./styles/fonts/reno-mono/RenoMono/Web-PS/RenoMono.woff2";
 
 const root = document.getElementById("root");
 render(<App />, root);

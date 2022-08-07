@@ -1,10 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "RenoMono", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: "RenoMono";
 }
 h1 {
   font-family: "Mars";
@@ -13,6 +17,11 @@ h1 {
   font-family: Mars;
   src: local(Mars), url("./styles/fonts/Mars/Mars\ Bold.ttf");
   font-weight: bold;
+}
+@font-face {
+  font-family: RenoMono;
+  src: local(RenoMono),
+    url("./styles/fonts/reno-mono/RenoMono/Web-PS/RenoMono.woff2");
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

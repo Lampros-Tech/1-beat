@@ -16,7 +16,7 @@
   left: 45%;
   -webkit-animation: mover 2s infinite alternate;
   animation: mover 2s infinite alternate;
-  z-index: 1000000 !important;
+  z-index: 100 !important;
 }
 .Musiclogo {
   width: 5rem;
