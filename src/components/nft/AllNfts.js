@@ -35,7 +35,25 @@ function AllNfts() {
 
           <div className="nft-content">
             <div className="nft-video">
-              <video width="320" height="240" controls>
+              <video controls>
+                <source src="example.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="nft-user">
+                <div className="nft-img-name">
+                  <img src={img} alt="" />
+                  <span>user name</span>
+                </div>
+                <button type="submit" className="nft-btn" alt="Buy Now">
+                  BUY
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="nft-content">
+            <div className="nft-video">
+              <video controls>
                 <source src="example.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

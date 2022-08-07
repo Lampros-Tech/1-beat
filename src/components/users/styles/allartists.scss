@@ -1,0 +1,78 @@
+$gradient-color: linear-gradient(
+  90deg,
+  #ff3ba0,
+  #eb0079,
+  #ff0083,
+  #ffc4e2,
+  #ff3ba0,
+  #eb0079,
+  #b1005b
+);
+
+.au-main-container {
+  padding-top: 1.5rem;
+  max-width: 80%;
+  margin: auto;
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    background: white; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ff0000,
+      white
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ff0000,
+      white
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+.au-grid-container {
+  padding-top: 1rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding-bottom: 1rem;
+
+  .au-grid-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .au-user-image {
+      position: relative;
+      width: 100%;
+      height: auto;
+      img {
+        border-radius: 20px;
+      }
+      .au-middle {
+        top: auto;
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        padding: 20px 30px;
+        bottom: 20px;
+        background: rgba(35, 35, 35, 0.5);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+      }
+
+      .text {
+        background-color: white;
+        padding: 16px 32px;
+        border-radius: 10px;
+        svg.ps-video-play-svg {
+          fill: #ff0083;
+        }
+      }
+    }
+  }
+}
