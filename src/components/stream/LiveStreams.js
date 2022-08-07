@@ -1,6 +1,5 @@
 import React from "react";
 import "../stream/LiveStream.scss";
-import img from "../stream/man.png";
 
 function LiveStreams() {
   return (
