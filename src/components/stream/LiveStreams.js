@@ -4,10 +4,11 @@ import Livepeer from "livepeer-nodejs";
 import ReactPlayer from "react-player";
 import { useReactMediaRecorder } from "react-media-recorder";
 import { useState, useEffect } from "react";
+import LoadingAnimation from "../users/generalblocks/LoadingAnimation";
 
 function LiveStreams() {
   const [videoSrc, setVideoSrc] = useState("");
-
+  const [isLoading, setLoading] = React.useState(true);
   const [stream, setStreams] = useState("");
 
   useReactMediaRecorder({ video: true });
@@ -16,12 +17,18 @@ function LiveStreams() {
   const getStreams = async () => {
     const streams = await livepeerObject.Stream.getAll(1, true, true);
     setStreams(streams);
+    setLoading(false);
   };
 
   useEffect(() => {
     getStreams();
     // setLoading(false);
   }, 5000);
+
+  if (isLoading) {
+    return <LoadingAnimation />;
+  }
+
   if (stream) {
     return (
       <>

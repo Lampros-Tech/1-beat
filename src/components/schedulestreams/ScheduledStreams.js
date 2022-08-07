@@ -1,6 +1,7 @@
 import React from "react";
 import "./ScheduledStreams.scss";
 import { useEffect, useState } from "react";
+import LoadingAnimation from "../users/generalblocks/LoadingAnimation";
 
 function ScheduledStreams({ account, contract }) {
   const [isLoading, setLoading] = React.useState(true);
@@ -35,7 +36,7 @@ function ScheduledStreams({ account, contract }) {
   }, [contract]);
 
   if (isLoading) {
-    return "Loading";
+    return <LoadingAnimation />;
   }
 
   if (data.length > 0) {
@@ -49,10 +50,15 @@ function ScheduledStreams({ account, contract }) {
             <div className="card-container">
               <div className="main-card">
                 <div className="stream-image">
-                  <img src={inde[0]} alt="" className="cover-img" />
+                  <img
+                    src={inde[0]}
+                    alt=""
+                    className="cover-img"
+                    crossOrigin="anonymous"
+                  />
                 </div>
                 <div className="card-title">
-                  <h1>{inde[1]}</h1>
+                  <h2>{inde[1]}</h2>
                   <span className="card-description">{inde[2]}</span>
                   <div className="date-time">
                     <p>Start Time : {inde[3]}</p>
