@@ -177,11 +177,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-
         
-        
-        
-
         <Navbar setOpenWalletOption={setOpenWalletOption} />
         <div className="main-content">
           <Routes>
