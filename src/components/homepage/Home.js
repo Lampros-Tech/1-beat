@@ -1,12 +1,16 @@
 import React from "react";
 import "./Landingpage.css"
+import Musiclogo from "./assets/music.svg"
+import Livepeerlogo from "./assets/Livepeer.svg";
+import Polygonelogo from "./assets/polygon.svg";
+import Zoralogo from "./assets/zora.svg";
+import nftstoragelogo from "./assets/nftstorage.svg"
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import { Canvas, extend, useFrame, useLoader, useThree } from 'react-three-fiber';
 import circleImg from './assets/circle.png';
 import { Suspense, useCallback, useMemo, useRef } from 'react';
 extend({OrbitControls})
-
 
 function CameraControls(){
   const {
@@ -119,7 +123,14 @@ function Landingpage ()
   return(
     <>
       <div className="anim">
-        <div className="absolute">
+      <div className="absolute">
+            <div className="logo">
+              <img src={Musiclogo} className="Musiclogo"/>
+              <img src={Livepeerlogo} className="Livepeerlogo"/>
+              <img src={Polygonelogo}  className="Polygonelogo"/>
+              <img src={Zoralogo}  className="Zoralogo"/>
+              <img src={nftstoragelogo} className="nftstoragelogo"/>
+            </div>
             <div className='herotext'>
                 1Beat
             </div>
@@ -134,9 +145,7 @@ function Landingpage ()
       </Suspense>
 
     </div>
-   <div className="other">
-
-   </div>
+   
 
     </>
   )

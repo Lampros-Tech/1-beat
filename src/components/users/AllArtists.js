@@ -14,8 +14,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <h2 className="au-user-name">User Name</h2>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -24,8 +30,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -34,8 +46,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -44,8 +62,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -54,8 +78,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -64,8 +94,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -74,8 +110,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -84,8 +126,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -94,8 +142,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -104,8 +158,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -114,8 +174,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -124,8 +190,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -134,8 +206,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -144,8 +222,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -154,8 +238,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -164,8 +254,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -174,8 +270,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -184,8 +286,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -194,8 +302,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -204,8 +318,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -214,8 +334,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -224,8 +350,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -234,8 +366,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -244,8 +382,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -254,8 +398,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -264,8 +414,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -274,8 +430,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -284,8 +446,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -294,8 +462,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -304,8 +478,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -314,8 +494,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -324,8 +510,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -334,8 +526,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -344,8 +542,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -354,8 +558,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -364,8 +574,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -374,8 +590,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user1} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -384,8 +606,14 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user2} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -394,8 +622,926 @@ function AllArtists() {
           <div className="au-grid-div">
             <div className="au-user-image">
               <img src={user3} alt="video_cover" height="100%" width="100%" />
-              <div class="au-middle">
-                <div className="au-user-info"></div>
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user1} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user2} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ************************************************************* */}
+          {/* ************************************************************* */}
+          <div className="au-grid-div">
+            <div className="au-user-image">
+              <img src={user3} alt="video_cover" height="100%" width="100%" />
+              <div className="au-middle-p">
+                <div class="au-middle">
+                  <div className="au-middle-inside">
+                    <h2 className="au-user-name">User Name</h2>
+                    <h4 className="au-user-total-nfts">Total NFTs</h4>
+                    <h4 className="au-user-total-nfts">Total Streams</h4>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
