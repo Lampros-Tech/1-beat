@@ -1,7 +1,10 @@
 import React from "react";
 import "./MakeSchedule.scss";
+import { create, CID } from "ipfs-http-client";
 import { useDropzone } from "react-dropzone";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import Upload from "./Wavy_Bus-15_Single-02_prev_ui.png";
+// import Upload from "../styles/man.png";
 import pic from "./loginbg1.png";
 function MakeSchedule() {
   const [yourImage, setImage] = useState([]);
@@ -17,7 +20,29 @@ function MakeSchedule() {
       );
     },
   });
+  const profile_picture = useRef(null);
+  const [profile_image, setProfile_image] = useState();
+  const [profile_image_url, setProfile_image_url] = useState();
 
+  function reset(e) {
+    setProfile_image(null);
+    // console.log(profile_image);
+  }
+
+  async function UploadImage(e) {
+    const file = e.target.files[0];
+    // console.log(file);
+    setProfile_image(file);
+    try {
+      const client = create("https://ipfs.infura.io:5001/api/v0");
+      const added = await client.add(file);
+      const url = `https://ipfs.infura.io/ipfs/${added.path}`;
+      setProfile_image_url(url);
+      console.log(url);
+    } catch (error) {
+      console.log("Error uploading file: ", error);
+    }
+  }
   return (
     <div className="App">
       <div className="image-hero">
@@ -32,14 +57,42 @@ function MakeSchedule() {
             <input type="file" id="myfile" name="myfile"></input> */}
           </div>
           <div className="fileupload">
-            <div {...getRootProps()}>
-              <input className="ms-input" {...getInputProps()} />
-              {isDragActive ? (
-                <p>Drag 'n' drop some files here,</p>
-              ) : (
-                <p> click here to upload cover Photo</p>
-              )}
-            </div>
+            {profile_image ? (
+              <>
+                <img
+                  src={profile_image_url}
+                  className="uploaded_image-editprofile"
+                  alt="user_avatar"
+                />
+                <button
+                  className="reset-btn"
+                  onClick={(e) => {
+                    reset(e);
+                  }}
+                >
+                  reset
+                </button>
+              </>
+            ) : (
+              <div
+                className="upload-profile-picture"
+                onClick={(e) => {
+                  profile_picture.current.click();
+                }}
+              >
+                <img src={Upload} className="upload-image" alt="user_avatar" />
+              </div>
+            )}
+            <input
+              className="input-edit-profile"
+              type="file"
+              hidden
+              // defaultValue={nameOfUser}
+              ref={profile_picture}
+              onChange={(e) => {
+                UploadImage(e);
+              }}
+            />
             <div>
               {yourImage.map((upFile) => {
                 return (
