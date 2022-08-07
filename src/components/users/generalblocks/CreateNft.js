@@ -4,7 +4,7 @@ import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
 
 const ffmpeg = createFFmpeg({ log: true });
 
-class ProfileCreateNft extends React.Component {
+class CreateNft extends React.Component {
   constructor(props) {
     super(props);
     this.state = { ready: false, video: null, gif: null, start: 0, length: 3 };
@@ -99,4 +99,4 @@ class ProfileCreateNft extends React.Component {
   }
 }
 
-export default ProfileCreateNft;
+export default CreateNft;
