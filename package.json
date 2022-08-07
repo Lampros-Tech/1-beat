@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ffmpeg/core": "^0.10.0",
+    "@ffmpeg/ffmpeg": "^0.9.8",
     "@livepeer/webrtmp-sdk": "^0.2.3",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "@testing-library/jest-dom": "^5.16.5",
@@ -11,6 +13,7 @@
     "@web3-react/core": "^6.1.9",
     "@web3-react/walletlink-connector": "^6.2.14",
     "hardhat": "^2.10.1",
+    "http-proxy-middleware": "^2.0.6",
     "ipfs-http-client": "^57.0.3",
     "livepeer-nodejs": "^1.0.3",
     "node-sass": "^7.0.1",

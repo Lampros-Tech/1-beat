@@ -1,25 +1,31 @@
 import React from "react";
-import "./Landingpage.css"
-import Musiclogo from "./assets/music.svg"
+import "./Landingpage.css";
+import Musiclogo from "./assets/music.svg";
 import Livepeerlogo from "./assets/Livepeer.svg";
 import Polygonelogo from "./assets/polygon.svg";
 import Zoralogo from "./assets/zora.svg";
-import nftstoragelogo from "./assets/nftstorage.svg"
-import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { Canvas, extend, useFrame, useLoader, useThree } from 'react-three-fiber';
-import circleImg from './assets/circle.png';
-import { Suspense, useCallback, useMemo, useRef } from 'react';
-extend({OrbitControls})
+import nftstoragelogo from "./assets/nftstorage.svg";
+import * as THREE from "three";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import {
+  Canvas,
+  extend,
+  useFrame,
+  useLoader,
+  useThree,
+} from "react-three-fiber";
+import circleImg from "./assets/circle.png";
+import { Suspense, useCallback, useMemo, useRef } from "react";
+extend({ OrbitControls });
 
-function CameraControls(){
+function CameraControls() {
   const {
     camera,
-    gl: {domElement}
+    gl: { domElement },
   } = useThree();
 
   const controlsRef = useRef();
-  useFrame(() => controlsRef.current.update())
+  useFrame(() => controlsRef.current.update());
 
   return (
     <orbitControls
@@ -38,14 +44,17 @@ function Points() {
   let t = 0;
   let f = 0.002;
   let a = 3;
-  const graph = useCallback((x, z) => {
-    return Math.sin(f * (x ** 2 + z ** 2 + t)) * a;
-  }, [t, f, a])
+  const graph = useCallback(
+    (x, z) => {
+      return Math.sin(f * (x ** 2 + z ** 2 + t)) * a;
+    },
+    [t, f, a]
+  );
 
-  const count = 100
-  const sep = 3
+  const count = 100;
+  const sep = 3;
   let positions = useMemo(() => {
-    let positions = []
+    let positions = [];
 
     for (let xi = 0; xi < count; xi++) {
       for (let zi = 0; zi < count; zi++) {
@@ -57,11 +66,11 @@ function Points() {
     }
 
     return new Float32Array(positions);
-  }, [count, sep, graph])
+  }, [count, sep, graph]);
 
   useFrame(() => {
-    t += 15
-    
+    t += 15;
+
     const positions = bufferRef.current.array;
 
     let i = 0;
@@ -76,14 +85,14 @@ function Points() {
     }
 
     bufferRef.current.needsUpdate = true;
-  })
+  });
 
   return (
     <points>
       <bufferGeometry attach="geometry">
         <bufferAttribute
           ref={bufferRef}
-          attachObject={['attributes', 'position']}
+          attachObject={["attributes", "position"]}
           array={positions}
           count={positions.length / 3}
           itemSize={3}
@@ -93,7 +102,7 @@ function Points() {
       <pointsMaterial
         attach="material"
         map={imgTex}
-        color={0xFF0083}
+        color={0xff0083}
         size={0.5}
         sizeAttenuation
         transparent={false}
@@ -112,43 +121,36 @@ function AnimationCanvas() {
       <Suspense fallback={null}>
         <Points />
       </Suspense>
-      <CameraControls/>
+      <CameraControls />
     </Canvas>
   );
 }
 
-
-function Landingpage ()
-{
-  return(
+function Landingpage() {
+  return (
     <>
       <div className="anim">
-      <div className="absolute">
-            <div className="logo">
-              <img src={Musiclogo} className="Musiclogo"/>
-              <img src={Livepeerlogo} className="Livepeerlogo"/>
-              <img src={Polygonelogo}  className="Polygonelogo"/>
-              <img src={Zoralogo}  className="Zoralogo"/>
-              <img src={nftstoragelogo} className="nftstoragelogo"/>
-            </div>
-            <div className='herotext'>
-                1Beat
-            </div>
-            <div className='tag-line'>
-              Stream your music, Share the love. LIVE.
-            </div>
-           
+        <div className="absolute">
+          <div className="logo">
+            <img src={Musiclogo} className="Musiclogo" />
+            <img src={Livepeerlogo} className="Livepeerlogo" />
+            <img src={Polygonelogo} className="Polygonelogo" />
+            <img src={Zoralogo} className="Zoralogo" />
+            <img src={nftstoragelogo} className="nftstoragelogo" />
+          </div>
+          <div className="herotext">
+            <h1 className="hero-text">ONE BEAT</h1>
+          </div>
+          <div className="tag-line">
+            <h1>Stream your music, Share the love. LIVE.</h1>
+          </div>
         </div>
-          
-      <Suspense fallback={<div>Loading...</div>}>
-        <AnimationCanvas />
-      </Suspense>
 
-    </div>
-   
-
+        <Suspense fallback={<div>Loading...</div>}>
+          <AnimationCanvas />
+        </Suspense>
+      </div>
     </>
-  )
+  );
 }
-export default Landingpage
-  
+export default Landingpage;

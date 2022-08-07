@@ -1,7 +1,7 @@
 import React from "react";
 
 function ProfileCreateNft() {
-  return <div>ProfileCreateNft</div>;
+  return <></>;
 }
 
 export default ProfileCreateNft;
