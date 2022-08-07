@@ -1,6 +1,5 @@
 import React from "react";
 import "../stream/LiveStream.scss";
-import img from "../stream/man.png";
 
 function LiveStreams() {
   return (
@@ -20,15 +19,21 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
+
             <div className="livestream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
 
@@ -37,15 +42,20 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
             <div className="livestream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
 
@@ -54,15 +64,20 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
             <div className="livestream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
 
@@ -71,15 +86,20 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
             <div className="livestream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
 
@@ -88,15 +108,20 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
             <div className="livestream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
 
@@ -105,15 +130,20 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
             <div className="livestream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
 
@@ -122,15 +152,20 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
             <div className="stream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
 
@@ -139,15 +174,20 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
             <div className="livestream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
 
@@ -156,15 +196,20 @@ function LiveStreams() {
               <a>
                 <img src="https://picsum.photos/200" alt="" />
               </a>
+              <div class="btn btn_live">
+                Live<span class="live-icon"></span>
+              </div>
             </div>
             <div className="livestream-title">
               <h4>The news you asking thought, king’s</h4>
             </div>
             <div className="livestream-user">
               <div className="livestream-img-name">
-                <img src={img} alt="" />
                 <span>user name</span>
               </div>
+            </div>
+            <div className="livestream-time">
+              <span>1 year ago</span>
             </div>
           </div>
         </div>

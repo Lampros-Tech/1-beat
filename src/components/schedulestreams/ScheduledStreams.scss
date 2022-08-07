@@ -2,7 +2,15 @@
     width:70%;
     margin: auto;
 }
+.card-title{
+        text-align: justify;   
+        padding: 10px;
+        
+}
+.card-title > h1{
+    text-align: inherit;
 
+}
 .card-container{
     display: flex;
     margin: auto;
@@ -14,8 +22,9 @@
 .main-card{
     display: flex;
     padding: 20px;
-    background-color: lightcyan;
+    background-color: rgba(35, 35, 35, 0.5);
     border-radius: 5px;
+    align-items: flex-start;
 
 }
 
@@ -23,9 +32,10 @@
     flex-direction: row;
 }
 .book-button{
+    flex-direction: column;
     border: none;
     padding: 10px 20px;
-    background: #100720;
+    background: #ff0083 ;
     color: #ffffff;
     border-radius: 3px;
 }

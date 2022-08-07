@@ -27,7 +27,7 @@ import onebeat from "./artifacts/contracts/OneBeat.sol/OneBeat.json";
 import metamask from "./components/mm.png";
 import coinbase from "./components/wc.png";
 
-const contractAddress = "0xfeA7ee9ABf1E6892441Fbd679E17511110dB944F";
+const contractAddress = "0xa5E022582495A8C85Ce9CF5a62f85423653F5f50";
 
 function App() {
   const { activate, deactivate } = useWeb3React();
@@ -177,7 +177,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        
         <Navbar setOpenWalletOption={setOpenWalletOption} />
         <div className="main-content">
           <Routes>
