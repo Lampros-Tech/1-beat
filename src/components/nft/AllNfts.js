@@ -27,7 +27,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -45,7 +45,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -63,7 +63,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -81,7 +81,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -99,7 +99,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -117,7 +117,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -135,7 +135,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -153,7 +153,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -171,7 +171,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>
@@ -189,7 +189,7 @@ function AllNfts() {
                   <span>user name</span>
                 </div>
                 <button type="submit" className="nft-btn" alt="Buy Now">
-                  BUY
+                  Buy NFT
                 </button>
               </div>
             </div>

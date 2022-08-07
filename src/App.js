@@ -27,7 +27,7 @@ import onebeat from "./artifacts/contracts/OneBeat.sol/OneBeat.json";
 import metamask from "./components/mm.png";
 import coinbase from "./components/wc.png";
 
-const contractAddress = "0xa5E022582495A8C85Ce9CF5a62f85423653F5f50";
+const contractAddress = "0xaa8bb4F1a0F690012D8aE31bAba41B36B26cfEd9";
 
 function App() {
   const { activate, deactivate } = useWeb3React();

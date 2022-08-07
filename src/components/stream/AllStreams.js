@@ -1,8 +1,38 @@
 import React from "react";
 import "../stream/AllStream.scss";
 import img from "../stream/man.png";
+import { useEffect, useState } from "react";
 
-function AllStreams() {
+function AllStreams({ account, contract }) {
+  const [isLoading, setLoading] = React.useState(true);
+  const [data, setData] = useState([]);
+
+  const getProfileData = async (e) => {
+    let number = await contract.getTotalStreamNumber();
+    number = parseInt(number._hex, 16);
+    for (let i = 1; i <= number; i++) {
+      const stream = await contract.getAllStream(i);
+      const cover = stream.img_cid;
+      const title = stream.title;
+      const user = stream.stream_creator;
+      const creator = await contract.getCreator(account);
+      const name = creator.creatorName;
+      const cid = creator.photo_cid;
+      data.push([cover, title, name, cid]);
+    }
+    setData(data);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    getProfileData();
+    // setLoading(false);
+  }, [contract]);
+
+  if (isLoading) {
+    console.log("Loading");
+  }
+
   return (
     <>
       <div className="stream-main-container">
@@ -15,247 +45,31 @@ function AllStreams() {
           </p>
         </div>
         <div className="stream-main-content">
-          <div className="stream-content">
-            <div className="stream-img">
-              <div className="stream-img-main">
-                <a>
-                  <img src="https://picsum.photos/200" alt="" />
-                </a>
+          {data.map((inde) => {
+            return (
+              <div className="stream-content">
+                <div className="stream-img">
+                  <div className="stream-img-main">
+                    <a>
+                      <img src={inde[0]} alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div className="stream-user">
+                  <div className="stream-img-name">
+                    <img src={inde[3]} alt="" />
+                    <span>{inde[2]}</span>
+                  </div>
+                </div>
+                <div className="stream-title">
+                  <h4>{inde[1]}</h4>
+                </div>
+                <div className="stream-date">
+                  <span>Date:22/8/2022</span>
+                </div>
               </div>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>Where we starting that and didn’t</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
-
-          <div className="stream-content">
-            <div className="stream-img">
-              <a>
-                <img src="https://picsum.photos/200" alt="" />
-              </a>
-            </div>
-            <div className="stream-user">
-              <div className="stream-img-name">
-                <img src={img} alt="" />
-                <span>user name</span>
-              </div>
-            </div>
-            <div className="stream-title">
-              <h4>The news you asking thought, king’s</h4>
-            </div>
-            <div className="stream-date">
-              <span>Date:22/8/2022</span>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     </>

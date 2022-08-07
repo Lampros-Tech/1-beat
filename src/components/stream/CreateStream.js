@@ -123,7 +123,7 @@ function CreateStream({ account, contract }) {
       account,
       title,
       des,
-      ["0xfe039eb325231e046f06f828c41382ac59f73e45"],
+      "0xfe039eb325231e046f06f828c41382ac59f73e45",
       uploaded_image,
       stream_.id,
       record

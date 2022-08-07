@@ -11,15 +11,13 @@ contract OneBeat {
         address stream_creator;
         string title;
         string description;
-        address stream_rights;
+        string stream_rights;
         string img_cid;
         string video_id;
         bool wantToRecord;
     }
     mapping(uint256 => Stream) public idToStream;
     mapping(address => uint256[]) public userToStream;
-    mapping(address => mapping(uint256 => bool))
-        public isAllowedForStreamedNfts;
 
     struct StreamScheduled {
         uint256 schedule_id;
@@ -28,15 +26,13 @@ contract OneBeat {
         string s_title;
         string s_description;
         string time;
-        address rights;
+        string rights;
         uint256 price;
         string s_video_id;
         bool isOver;
     }
     mapping(uint256 => StreamScheduled) public idToScheduledStream;
     mapping(address => uint256[]) public userToScheduledStream;
-    mapping(address => mapping(uint256 => bool))
-        public isAllowedForScheduledNfts;
 
     struct Creator {
         address creator;
@@ -69,7 +65,7 @@ contract OneBeat {
         address creator,
         string memory t,
         string memory d,
-        address rights,
+        string memory rights,
         string memory cid,
         string memory v_cid,
         bool isRecord
@@ -86,7 +82,6 @@ contract OneBeat {
             isRecord
         );
         userToStream[creator].push(streamId);
-        isAllowedForStreamedNfts[rights][streamId] = true;
     }
 
     function scheduleStream(
@@ -95,7 +90,7 @@ contract OneBeat {
         string memory title,
         string memory des,
         string memory time,
-        address rights,
+        string memory rights,
         uint256 price
     ) public {
         scheduleStreamId += 1;
@@ -112,7 +107,6 @@ contract OneBeat {
             false
         );
         userToScheduledStream[creator].push(scheduleStreamId);
-        isAllowedForScheduledNfts[rights][streamId] = true;
     }
 
     function startStream(uint256 id, string memory v_id) public {
@@ -162,22 +156,6 @@ contract OneBeat {
         return creatorInfo[user];
     }
 
-    function getScheduledRights(address righter, uint256 id)
-        public
-        view
-        returns (bool)
-    {
-        return (isAllowedForScheduledNfts[righter][id]);
-    }
-
-    function getStreamRights(address righter, uint256 id)
-        public
-        view
-        returns (bool)
-    {
-        return (isAllowedForStreamedNfts[righter][id]);
-    }
-
     function getTotalStream(address user) public view returns (uint256) {
         return userToStream[user].length;
     }
@@ -196,5 +174,13 @@ contract OneBeat {
 
     function getStreamId(address user) public view returns (uint256[] memory) {
         return (userToStream[user]);
+    }
+
+    function getTotalStreamNumber() public view returns (uint256) {
+        return streamId;
+    }
+
+    function getTotalScheduledNumber() public view returns (uint256) {
+        return scheduleStreamId;
     }
 }
