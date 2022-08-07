@@ -93,6 +93,9 @@ function ProfileStreamings({ account, contract }) {
                 <div className="ps-stream-time">
                   <h6>1 year ago</h6>
                 </div>
+                <div className="ps-grid-title">
+                  <button>Create NFT</button>
+                </div>
               </div>
             );
           })}
