@@ -70,6 +70,8 @@ function LiveStreams() {
         </div>
       </>
     );
+  } else {
+    console.log("no");
   }
 }
 export default LiveStreams;

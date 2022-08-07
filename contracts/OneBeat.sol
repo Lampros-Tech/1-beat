@@ -25,7 +25,8 @@ contract OneBeat {
         string cover_cid;
         string s_title;
         string s_description;
-        string time;
+        string starttime;
+        string endtime;
         string rights;
         uint256 price;
         string s_video_id;
@@ -89,7 +90,8 @@ contract OneBeat {
         string memory cid,
         string memory title,
         string memory des,
-        string memory time,
+        string memory stime,
+        string memory etime,
         string memory rights,
         uint256 price
     ) public {
@@ -100,7 +102,8 @@ contract OneBeat {
             cid,
             title,
             des,
-            time,
+            stime,
+            etime,
             rights,
             price,
             "",

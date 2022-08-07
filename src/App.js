@@ -29,7 +29,7 @@ import metamask from "./components/mm.png";
 import coinbase from "./components/wc.png";
 import CreateNft from "./components/users/generalblocks/CreateNft";
 
-const contractAddress = "0xaa8bb4F1a0F690012D8aE31bAba41B36B26cfEd9";
+const contractAddress = "0x6E27C5e9408C9676dae03381440fed2a6EBC430C";
 
 function App() {
   const { activate, deactivate } = useWeb3React();

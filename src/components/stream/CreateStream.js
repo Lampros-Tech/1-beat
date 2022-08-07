@@ -83,7 +83,9 @@ function CreateStream({ account, contract }) {
     });
     console.log(stream_);
     console.log(stream_.streamKey);
-    stream_.setRecord(true);
+    if (record) {
+      stream_.setRecord(true);
+    }
     const current_stream = await livepeerObject.Stream.get(stream_.id);
     console.log("video id" + stream_.id);
     const result = await current_stream.setRecord(true);
