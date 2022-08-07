@@ -1,9 +1,9 @@
 .navbar-main {
 
   display: flex;
-  width: 100%;
+//   width: 100%;
 //   position: fixed;
-  align-items: center;
+  
   align-content: center;
   color: #fff;
   padding: 10px 20px;
@@ -33,13 +33,13 @@
   }
 
   .navbar-right {
-
+    margin-top: 20px;
       ul {
           list-style: none;
           display: flex;
           gap: 10px;
           margin: 0px !important;
-          align-items: center;
+            
           align-content: center;
 
           li {
