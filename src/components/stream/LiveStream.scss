@@ -79,6 +79,7 @@
 }
 .btn.btn_live {
   margin-right: 10rem;
+  padding-top: 10px;
 }
 
 span.live-icon {
@@ -112,4 +113,8 @@ span.live-icon {
     transform: scale(3.5, 3.5);
     background-color: rgba(red, 0);
   }
+}
+.livestream-main-header {
+  width: 100%;
+  height: auto;
 }

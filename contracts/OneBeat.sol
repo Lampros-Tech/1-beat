@@ -11,14 +11,15 @@ contract OneBeat {
         address stream_creator;
         string title;
         string description;
-        string[] stream_rights;
+        address stream_rights;
         string img_cid;
         string video_id;
         bool wantToRecord;
     }
     mapping(uint256 => Stream) public idToStream;
     mapping(address => uint256[]) public userToStream;
-    mapping(string => mapping(uint256 => bool)) public isAllowedForStreamedNfts;
+    mapping(address => mapping(uint256 => bool))
+        public isAllowedForStreamedNfts;
 
     struct StreamScheduled {
         uint256 schedule_id;
@@ -27,7 +28,7 @@ contract OneBeat {
         string s_title;
         string s_description;
         string time;
-        address[] rights;
+        address rights;
         uint256 price;
         string s_video_id;
         bool isOver;
@@ -37,29 +38,38 @@ contract OneBeat {
     mapping(address => mapping(uint256 => bool))
         public isAllowedForScheduledNfts;
 
-    mapping(address => string) public creatorName;
-    mapping(address => string) public creatorPhoto;
-    mapping(address => uint256[]) public creatorTokens;
+    struct Creator {
+        address creator;
+        string creatorName;
+        string photo_cid;
+        uint256[] tokens;
+    }
+    mapping(address => Creator) public creatorInfo;
 
     mapping(uint256 => address[]) public allowedWatchers;
 
     uint256 scheduleStreamId;
     uint256 streamId;
 
-    function createProfile(string memory name, string memory photo) public {
-        if (!isAdded[msg.sender]) {
-            users.push(msg.sender);
-            isAdded[msg.sender] = true;
+    function createProfile(
+        address user,
+        string memory name,
+        string memory photo
+    ) public {
+        if (!isAdded[user]) {
+            users.push(user);
+            isAdded[user] = true;
         }
-        creatorName[msg.sender] = name;
-        creatorName[msg.sender] = photo;
+        creatorInfo[user].creator = user;
+        creatorInfo[user].creatorName = name;
+        creatorInfo[user].photo_cid = photo;
     }
 
     function createStream(
         address creator,
         string memory t,
         string memory d,
-        string[] memory rights,
+        address rights,
         string memory cid,
         string memory v_cid,
         bool isRecord
@@ -76,9 +86,7 @@ contract OneBeat {
             isRecord
         );
         userToStream[creator].push(streamId);
-        for (uint256 i = 0; i < rights.length; i++) {
-            isAllowedForStreamedNfts[rights[i]][streamId] = true;
-        }
+        isAllowedForStreamedNfts[rights][streamId] = true;
     }
 
     function scheduleStream(
@@ -87,7 +95,7 @@ contract OneBeat {
         string memory title,
         string memory des,
         string memory time,
-        address[] memory rights,
+        address rights,
         uint256 price
     ) public {
         scheduleStreamId += 1;
@@ -104,9 +112,7 @@ contract OneBeat {
             false
         );
         userToScheduledStream[creator].push(scheduleStreamId);
-        for (uint256 i = 0; i < rights.length; i++) {
-            isAllowedForScheduledNfts[rights[i]][streamId] = true;
-        }
+        isAllowedForScheduledNfts[rights][streamId] = true;
     }
 
     function startStream(uint256 id, string memory v_id) public {
@@ -120,12 +126,12 @@ contract OneBeat {
         allowedWatchers[id].push(watcher);
     }
 
-    function createNFT(uint256 tid) public {
-        creatorTokens[msg.sender].push(tid);
+    function createNFT(address user, uint256 tid) public {
+        creatorInfo[user].tokens.push(tid);
     }
 
-    function buyNFT(uint256 tid) public {
-        creatorTokens[msg.sender].push(tid);
+    function buyNFT(address user, uint256 tid) public {
+        creatorInfo[user].tokens.push(tid);
     }
 
     function getAllStream(uint256 id) public view returns (Stream memory) {
@@ -152,12 +158,8 @@ contract OneBeat {
         return (allowedWatchers[id]);
     }
 
-    function getName() public view returns (string memory) {
-        return (creatorName[msg.sender]);
-    }
-
-    function getTokens() public view returns (uint256[] memory) {
-        return (creatorTokens[msg.sender]);
+    function getCreator(address user) public view returns (Creator memory) {
+        return creatorInfo[user];
     }
 
     function getScheduledRights(address righter, uint256 id)
@@ -168,11 +170,31 @@ contract OneBeat {
         return (isAllowedForScheduledNfts[righter][id]);
     }
 
-    function getStreamRights(string memory righter, uint256 id)
+    function getStreamRights(address righter, uint256 id)
         public
         view
         returns (bool)
     {
         return (isAllowedForStreamedNfts[righter][id]);
+    }
+
+    function getTotalStream(address user) public view returns (uint256) {
+        return userToStream[user].length;
+    }
+
+    function getTotalScheduledStreams(address user)
+        public
+        view
+        returns (uint256)
+    {
+        return userToScheduledStream[user].length;
+    }
+
+    function getTotal(address user) public view returns (uint256) {
+        return userToStream[user].length + userToScheduledStream[user].length;
+    }
+
+    function getStreamId(address user) public view returns (uint256[] memory) {
+        return (userToStream[user]);
     }
 }

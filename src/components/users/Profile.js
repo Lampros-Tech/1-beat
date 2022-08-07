@@ -5,17 +5,51 @@ import ProfileNfts from "./generalblocks/ProfileNfts";
 import ProfileStreamings from "./generalblocks/ProfileStreamings";
 import "./styles/profile.scss";
 import EditProfile from "./generalblocks/EditProfile";
+import "../users/styles/popup.css";
+import { useEffect } from "react";
 
-function Profile() {
+function Profile({ account, contract }) {
   const [imgSrc, setImgSrc] = useState(logo);
   const [showStreamings, setStreamings] = useState(true);
   const [showNFTs, setNFTs] = useState(false);
   const [showCreateNFTs, setCreateNFTs] = useState(false);
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [isLoading, setLoading] = React.useState(true);
+  const [name, setName] = useState("Unknown");
+  const [no_nft, setNoNft] = useState();
+  const [no_stream, setNoStream] = useState();
+
+  const getProfileData = async (e) => {
+    const n = await contract.getCreator(account);
+    if (n.creatorName) {
+      setName(n.creatorName);
+    }
+    setImgSrc(n.photo_cid);
+    setNoNft(n.tokens.length);
+    let number_stream = await contract.getTotal(account);
+    number_stream = parseInt(number_stream._hex, 16);
+    setNoStream(number_stream);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    getProfileData();
+    // setLoading(false);
+  }, [contract]);
+
+  if (isLoading) {
+    console.log("Loading");
+  }
 
   return (
     <>
-      {buttonPopup && <EditProfile closeModal={setButtonPopup} />}
+      {buttonPopup && (
+        <EditProfile
+          account={account}
+          contract={contract}
+          closeModal={setButtonPopup}
+        />
+      )}
       <section className="profile-main-container">
         <section className="profile-first-section">
           <div className="profile-first-section-inside-one">
@@ -30,31 +64,15 @@ function Profile() {
             </div>
             <div className="profile-info">
               <div className="profile-name">
-                <h1>User Name</h1>
+                <h1>{name}</h1>
               </div>
-              {/* <div className="profile-details">
-              <p className="profile-details-p">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Consequatur est vero fugit, nisi aliquam obcaecati pariatur
-                delectus dolorem vitae, unde reiciendis praesentium. Optio
-                tempora fugit, sapiente eum suscipit error obcaecati aperiam,
-                alias, doloribus fuga harum ipsam consequatur eaque magnam
-                dignissimos quam! Porro quia cumque explicabo molestias
-                repudiandae sit optio labore itaque laborum dignissimos rerum
-                odio numquam nulla unde fugiat, dolores accusantium assumenda
-                laudantium molestiae ea praesentium! Non rerum eius excepturi
-                est illo neque iusto voluptate. Architecto magnam similique
-                blanditiis voluptatum aspernatur, alias labore dolore deleniti,
-                impedit at dolores ducimus ea sit debitis, numquam dignissimos
-                doloremque. Deserunt omnis temporibus iusto error.
-              </p>
-             </div> */}
+
               <div className="profile-nft-info">
                 <p>
-                  Total <span className="nft-span">NFTs</span>
+                  Total <span className="nft-span">{no_nft}</span>
                 </p>
                 <p>
-                  Total <span className="nft-span">Streams</span>
+                  Total <span className="nft-span">{no_stream}</span>
                 </p>
               </div>
               <div className="profile-info-button">
@@ -63,7 +81,14 @@ function Profile() {
             </div>
           </div>
           <div className="profile-edit-btn">
-            <button className="profile-edit-button">Edit Profile</button>
+            <button
+              className="profile-edit-button"
+              onClick={() => {
+                setButtonPopup(true);
+              }}
+            >
+              Edit Profile
+            </button>
           </div>
         </section>
         <section className="profile-second-section">
@@ -109,9 +134,15 @@ function Profile() {
               Create NFT
             </button>
           </div>
-          {showStreamings ? <ProfileStreamings /> : null}
-          {showNFTs ? <ProfileNfts /> : null}
-          {showCreateNFTs ? <ProfileCreateNft /> : null}
+          {showStreamings ? (
+            <ProfileStreamings contract={contract} account={account} />
+          ) : null}
+          {showNFTs ? (
+            <ProfileNfts contract={contract} account={account} />
+          ) : null}
+          {showCreateNFTs ? (
+            <ProfileCreateNft contract={contract} account={account} />
+          ) : null}
         </section>
       </section>
     </>
