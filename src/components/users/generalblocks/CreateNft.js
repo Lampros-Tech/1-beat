@@ -1,13 +1,19 @@
 import React from "react";
 import "./profilecreatenft.scss";
+import { useLocation } from "react-router-dom";
 import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
 import "../generalblocks/createnft.scss";
 
 const ffmpeg = createFFmpeg({ log: true });
 
 class CreateNft extends React.Component {
+  // const [isLoading, setLoading] = React.useState(true);
+  // const [src, setSrc] = React.useState("");
+  // const location = useLocation();
+
   constructor(props) {
     super(props);
+    console.log(this.props);
     this.state = {
       ready: false,
       video:
@@ -15,6 +21,8 @@ class CreateNft extends React.Component {
       gif: null,
       start: 0,
       length: 3,
+      isLoading: true,
+      src: "",
     };
   }
 

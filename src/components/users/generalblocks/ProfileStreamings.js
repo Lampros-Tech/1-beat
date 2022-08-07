@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { Routes, Link, useNavigate } from "react-router-dom";
 import React from "react";
 import "../generalblocks/profilestreamings.scss";
 import img from "../styles/Gaming4-5.jpg";
@@ -12,6 +12,7 @@ function ProfileStreamings({ account, contract }) {
   const [no_nft, setNoNft] = useState();
   const [no_stream, setNoStream] = useState();
   const [data, setData] = useState([]);
+  const [id, setId] = useState();
 
   const getProfileData = async (e) => {
     const n = await contract.getCreator(account);
@@ -24,7 +25,9 @@ function ProfileStreamings({ account, contract }) {
       const streamStruct = await contract.getAllStream(id);
       const t = streamStruct.title;
       const cid = streamStruct.img_cid;
-      data.push([t, cid]);
+      const v_id = streamStruct.video_id;
+      console.log("vid" + v_id);
+      data.push([t, cid, v_id]);
     }
     setData(data);
     setLoading(false);
@@ -41,11 +44,13 @@ function ProfileStreamings({ account, contract }) {
   // ************************************
 
   const navigate = useNavigate();
-  const navigateToCreateNft = () => {
-    navigate("/create-nft");
+  const navigateToCreateNft = (id) => {
+    // navigate("/create-nft", { state: { id: id } });
   };
-  const navigateToStreamPlay = () => {
-    navigate("/stream-play");
+  const navigateToStreamPlay = (id) => {
+    console.log(id);
+
+    navigate("/stream-play", { state: { id: id } });
   };
   return (
     <>
@@ -55,8 +60,11 @@ function ProfileStreamings({ account, contract }) {
           {/* ************************************ */}
           {data.map((inde) => {
             return (
-              <div className="ps-grid-div" onClick={navigateToStreamPlay}>
-                <div className="ps-video-image">
+              <div className="ps-grid-div">
+                <div
+                  className="ps-video-image"
+                  onClick={() => navigateToStreamPlay(inde[2])}
+                >
                   <img
                     src={inde[1]}
                     alt="video_cover"
@@ -105,7 +113,12 @@ function ProfileStreamings({ account, contract }) {
                   <h6>1 year ago</h6>
                 </div>
                 <div className="ps-grid-title">
-                  <button onClick={navigateToCreateNft}>Create NFT</button>
+                  <Link
+                    to="/create-nft"
+                    state={{ id: 1, name: "sabaoon", shirt: "green" }}
+                  >
+                    <button>Create NFT</button>
+                  </Link>
                 </div>
               </div>
             );

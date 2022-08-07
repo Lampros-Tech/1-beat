@@ -29,7 +29,7 @@ import metamask from "./components/mm.png";
 import coinbase from "./components/wc.png";
 import CreateNft from "./components/users/generalblocks/CreateNft";
 
-const contractAddress = "0x6E27C5e9408C9676dae03381440fed2a6EBC430C";
+const contractAddress = "0x7242137346A89b53477D880c8cFa03d3CbCDe805";
 
 function App() {
   const { activate, deactivate } = useWeb3React();
@@ -64,8 +64,8 @@ function App() {
       window.location.reload();
     });
 
-    if (chainId !== 4) {
-      alert("Please connect to rinkeby network");
+    if (chainId !== 80001) {
+      alert("Please connect to polygon network");
     }
     window.ethereum.on("accountsChanged", async function (accounts) {
       setAccount(connected);

@@ -32,29 +32,7 @@ function AllStreams({ account, contract }) {
   if (isLoading) {
     return "Loading";
   }
-<<<<<<< HEAD
 
-  return (
-    <>
-      <div className="stream-main-container">
-        <div className="stream-header">
-          <h1 className="t-header">AllStream</h1>
-          <p className="p-header">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            temporibus sed voluptatem dicta quas vitae quibusdam omnis similique
-            optio sint esse quisquam
-          </p>
-        </div>
-        <div className="stream-main-content">
-          {data.map((inde) => {
-            return (
-              <div className="stream-content">
-                <div className="stream-img">
-                  <div className="stream-img-main">
-                    <a>
-                      <img src={inde[0]} alt="" crossOrigin="anonymous" />
-                    </a>
-=======
   if (data.length > 0) {
     return (
       <>
@@ -89,7 +67,6 @@ function AllStreams({ account, contract }) {
                   </div>
                   <div className="stream-date">
                     <span>Date:22/8/2022</span>
->>>>>>> f36d4335718eb23371fb6d60e89d2d6fa07ec49d
                   </div>
                 </div>
               );
