@@ -1,7 +1,10 @@
 import React from "react";
 import "../stream/LiveStream.scss";
+import Livepeer from "livepeer-nodejs";
 
 function LiveStreams() {
+  const livepeerObject = new Livepeer("d72d5808-9b46-4bdf-9cb6-d703ca3e0acc");
+  const live = async (e) => {};
   return (
     <>
       <div className="livestream-main-container">
