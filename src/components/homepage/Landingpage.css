@@ -1,121 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-.Navbar
-{
-    width: 99.9%;
-    height: 30px;
-    border: 1px #000 solid;
-    position: absolute;
-    
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+.Navbar {
+  width: 99.9%;
+  height: 30px;
+  border: 1px #000 solid;
+  position: absolute;
 }
-.anim
-{
-    
-    height: calc(100vh - 152px) !important;   
+.anim {
+  height: calc(100vh - 152px) !important;
 }
-.Livepeerlogo
-{
-    width:220px;
-    position: absolute;
-    top:470px;
-    left: 670px;
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2s infinite  alternate;
-    z-index:1000000 !important;
+.Livepeerlogo {
+  width: 10rem;
+  position: absolute;
+  top: 150%;
+  left: 45%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+  z-index: 1000000 !important;
 }
-.Musiclogo
-{
-    width:100px;
-    position: absolute;
-    top:70px;
-    left: 170px;
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2s infinite  alternate;
-    z-index:1000000 !important;
+.Musiclogo {
+  width: 5rem;
+  position: absolute;
+  top: 150%;
+  left: 5%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+  z-index: 1000000 !important;
 }
-.Zoralogo
-{
-    width:200px;
-    position: absolute;
-    top:430px;
-    left: 190px;
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2s infinite  alternate;
-    z-index:1000000 !important;
+.Zoralogo {
+  width: 10rem;
+  position: absolute;
+  top: 150%;
+  left: 20%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+  z-index: 1000000 !important;
 }
-.Polygonelogo
-{
-    width:200px;
-    
-    position: absolute;
-    top:10px;
-    right:100px;
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2s infinite  alternate;
+.Polygonelogo {
+  width: 10rem;
+  position: absolute;
+  top: 150%;
+  right: 5%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
 }
-.nftstoragelogo
-{
-    width:200px;
-    position: absolute;
-    top:400px;
-    right:200px;
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2s infinite  alternate;
-    z-index:1000000 !important;
+.nftstoragelogo {
+  width: 10rem;
+  position: absolute;
+  top: 150%;
+  right: 25%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+  z-index: 1000000 !important;
 }
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
-.absolute
-{
-    position:absolute;
-    width: 100%;
+.absolute {
+  position: absolute;
+  width: 100%;
 }
-.herotext
-{
-    width: 100%;
-    padding-top:35px ;
-    color: #fdfd;
-    font-size: 10rem;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+.herotext h1 {
+  margin: auto;
+  width: 90%;
+  padding-top: 3rem;
+  color: white;
+  font-size: 7rem;
+  text-align: center;
+  z-index: 1000001 !important;
 }
-.flex
-{
-    display: flex;
+.flex {
+  display: flex;
 }
-.Animation
-{
-    background-color: #fff;
+.Animation {
+  background-color: #fff;
 }
-.tag-line
-{
-    font-size: 50px;
-    color: #fff;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+.tag-line {
+  z-index: 1000001 !important;
 }
-.other
-{
-    height: 100vh;
-    background-color: #030303;
+.tag-line h1 {
+  line-height: 3;
+  font-size: 1.3rem;
+  color: #ff0088;
+  text-align: center;
+  z-index: 1000001 !important;
 }
-.object
-{
-    top:329px;
-    top: 329px;
-    left: -257.8944396972656px;
-    width: 509px;
-    height: 514px;
-    transform: matrix(-0.05, 1, -1, -0.05, 0, 0);
-/* UI Properties */
-    background: transparent url('') 0% 0% no-repeat padding-box;
-    opacity: 0.58;
+.other {
+  height: 100vh;
+  background-color: #030303;
+}
+.object {
+  top: 329px;
+  top: 329px;
+  left: -257.8944396972656px;
+  width: 509px;
+  height: 514px;
+  transform: matrix(-0.05, 1, -1, -0.05, 0, 0);
+  /* UI Properties */
+  background: transparent url("") 0% 0% no-repeat padding-box;
+  opacity: 0.58;
 }
 /*
 
