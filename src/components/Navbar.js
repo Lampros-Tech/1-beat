@@ -5,11 +5,14 @@ import { useEffect, useState } from "react";
 import "../styles/Navbar/navbar.scss";
 import logo from "../styles/logo.png";
 import "../styles/Navbar/navbar.scss";
+import Dropdown from "./users/generalblocks/Dropdown";
+import dropdownsvg from "../styles/Navbar/arrow.svg";
 
 const Navbar = ({ setOpenWalletOption }) => {
   const cookie = new Cookies();
   const [address, setAddress] = useState(cookie.get("account"));
   const location = useLocation();
+  const [dropdown, setDropdown] = useState(false);
 
   useEffect(() => {
     const addr = cookie.get("account");
@@ -21,6 +24,23 @@ const Navbar = ({ setOpenWalletOption }) => {
   useEffect(() => {
     console.log(location.pathname);
   }, [location]);
+
+  // ******Drop down code************
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 900) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+  const onMouseLeave = () => {
+    if (window.innerWidth < 900) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
   return (
     <>
       <div className="navbar-main">
@@ -45,10 +65,20 @@ const Navbar = ({ setOpenWalletOption }) => {
                   className={
                     window.location.pathname === "/streams" ? "active" : null
                   }
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
                 >
-                  <Link to="/streams">All Streams</Link>
+                  <Link to="/streams">
+                    All Streams{" "}
+                    <img
+                      className="dropdown-arrow"
+                      src={dropdownsvg}
+                      alt="dropdownarrow"
+                    />
+                  </Link>
+                  {dropdown && <Dropdown />}
                 </li>
-                <li
+                {/* <li
                   className={
                     window.location.pathname === "/schedule-stream"
                       ? "active"
@@ -74,7 +104,7 @@ const Navbar = ({ setOpenWalletOption }) => {
                   }
                 >
                   <Link to="/live-stream">Live Streams</Link>
-                </li>
+                </li> */}
                 <li
                   className={
                     window.location.pathname === "/all-artists"

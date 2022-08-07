@@ -1,9 +1,19 @@
-.navbar-main {
+$gradient-color: linear-gradient(
+  90deg,
+  #ff3ba0,
+  #eb0079,
+  #ff0083,
+  #ffc4e2,
+  #ff3ba0,
+  #eb0079,
+  #b1005b
+);
 
+.navbar-main {
   display: flex;
-//   width: 100%;
-//   position: fixed;
-  
+  //   width: 100%;
+  //   position: fixed;
+
   align-content: center;
   color: #fff;
   padding: 10px 20px;
@@ -12,53 +22,64 @@
   z-index: 10 !important;
 
   .navbar-left {
-      font-weight: 700;
-      font-size: 20px;
+    font-weight: 700;
+    font-size: 20px;
 
-      .navbar-logo{
-          font-family: Inconsolata;
-      }
+    // .navbar-logo {
+    //   //   font-family: Inconsolata;
+    // }
   }
 
   .navbar-middle {
-      flex-grow: 1;
+    flex-grow: 1;
 
-      .searchbar {
-          margin-left: 20px;
+    .searchbar {
+      margin-left: 20px;
 
-          input[type=text] {
-              padding: 5px;
-          }
+      input[type="text"] {
+        padding: 5px;
       }
+    }
   }
 
   .navbar-right {
     margin-top: 20px;
-      ul {
-          list-style: none;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      margin: 0px !important;
+
+      align-content: center;
+
+      li {
+        padding: 0.5rem 0.5rem;
+        border-radius: 10px;
+        // font-family: RenoMono !important;
+        &.active {
+          background: $gradient-color;
+          background-size: 600% 200%;
+          animation: gradient 4s linear infinite;
+          animation-direction: alternate;
+          color: white;
           display: flex;
-          gap: 10px;
-          margin: 0px !important;
-            
-          align-content: center;
+          flex-direction: column;
+        }
 
-          li {
-              font-family: Inconsolata;
-              &.active{
-                  background-color: white;
-                  color: black !important;
-              }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
 
-              a {
-                  text-decoration: none;
-                  color: inherit;
-              }
-
-              .connect-btn {
-                  font-size: 16px;
-                  cursor: pointer;
-              }
-          }
+        .connect-btn {
+          font-size: 16px;
+          cursor: pointer;
+        }
       }
+    }
+    img.dropdown-arrow {
+      height: 15px;
+      width: 25px;
+    }
   }
 }
