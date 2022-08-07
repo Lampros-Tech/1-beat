@@ -11,7 +11,7 @@ $gradient-color: linear-gradient(
 
 .cs {
   margin: auto;
-  min-height: 80vh;
+  min-height: calc(100vh - 152px);
   width: 80%;
   max-width: 80%;
   display: flex;
@@ -22,6 +22,7 @@ $gradient-color: linear-gradient(
 
   .cs-left-container {
     min-width: 60%;
+    width: 60%;
     padding-top: 30px;
     video.cs-video {
       width: 100%;

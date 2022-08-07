@@ -75,6 +75,7 @@ export default function EditProfile({ account, contract, closeModal }) {
                   src={profile_image_url}
                   className="uploaded_image-editprofile"
                   alt="user_avatar"
+                  crossOrigin="anonymous"
                 />
                 <button
                   className="reset-btn"

@@ -1,13 +1,21 @@
 import React from "react";
 import "./profilecreatenft.scss";
 import { createFFmpeg, fetchFile } from "@ffmpeg/ffmpeg";
+import "../generalblocks/createnft.scss";
 
 const ffmpeg = createFFmpeg({ log: true });
 
 class CreateNft extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { ready: false, video: null, gif: null, start: 0, length: 3 };
+    this.state = {
+      ready: false,
+      video:
+        "https://livepeercdn.com/recordings/9b8b1920-bfb1-4063-a4b3-c3e39aaa9896/source.mp4",
+      gif: null,
+      start: 0,
+      length: 3,
+    };
   }
 
   componentDidMount() {
@@ -15,7 +23,9 @@ class CreateNft extends React.Component {
   }
 
   async loadFFmpeg() {
-    await ffmpeg.load();
+    if (!ffmpeg.isLoaded()) {
+      await ffmpeg.load();
+    }
     this.setState({ ready: true });
   }
 
@@ -50,49 +60,100 @@ class CreateNft extends React.Component {
 
   render() {
     return this.state.ready ? (
-      <div>
-        {this.state.video && (
-          <video
-            controls
-            width={250}
-            src={URL.createObjectURL(this.state.video)}
-          />
-        )}
-        <input
+      <>
+        <div className="cn-main-container">
+          <div className="cn-left-container">
+            <h1>Your Stream</h1>
+            {this.state.video && (
+              <video
+                controls
+                width={500}
+                src={this.state.video}
+                crossOrigin="anonymous"
+              />
+            )}
+            {/* <input
           type={"file"}
           onChange={(e) => {
             this.setState({ video: e.target.files?.item(0) });
           }}
-        />
-        <label htmlFor={"start-input"}>Start Time</label>
-        <input
-          id={"start-input"}
-          type={"number"}
-          value={this.state.start}
-          onChange={(e) => {
-            this.setState({ start: e.target.value });
-          }}
-        />
-        <label htmlFor={"length-input"}>Length</label>
-        <input
-          id={"length-input"}
-          type={"number"}
-          value={this.state.length}
-          onChange={(e) => {
-            this.setState({ length: e.target.value });
-          }}
-        />
-        <button
-          onClick={() => {
-            this.convertVideoToGif();
-          }}
-        >
-          Convert
-        </button>
-        {this.state.gif && (
-          <video controls width={250} src={this.state.gif} alt={"gif"} />
-        )}
-      </div>
+        /> */}
+            <div className="cn-left-label">
+              <div>
+                <label htmlFor={"start-input"}>
+                  NFT Video Starting Time (in Sec){" "}
+                </label>
+              </div>
+              <div>
+                <input
+                  id={"start-input"}
+                  type={"number"}
+                  value={this.state.start}
+                  onChange={(e) => {
+                    this.setState({ start: e.target.value });
+                  }}
+                />
+              </div>
+              <div>
+                <label htmlFor={"length-input"}>
+                  Length of the Video (in Sec){" "}
+                </label>
+              </div>
+              <div>
+                <input
+                  id={"length-input"}
+                  type={"number"}
+                  value={this.state.length}
+                  onChange={(e) => {
+                    this.setState({ length: e.target.value });
+                  }}
+                />
+              </div>
+            </div>
+            <button
+              className="cn-convert-button"
+              onClick={() => {
+                this.convertVideoToGif();
+              }}
+            >
+              Create NFT
+            </button>
+          </div>
+          <div className="cn-right-container">
+            <h1>Your NFT Preview</h1>
+
+            {this.state.gif && (
+              <>
+                <video controls width={500} src={this.state.gif} alt={"gif"} />
+
+                <div className="cn-left-label">
+                  <div>
+                    <label>Enter Title of the NFT</label>
+                  </div>
+                  <div>
+                    <input type="text" />
+                  </div>
+
+                  <div>
+                    <label>NFT Description </label>
+                  </div>
+                  <div>
+                    <textarea rows="7" cols="30" />
+                  </div>
+                </div>
+                <button
+                  className="cn-convert-button"
+                  onClick={() => {
+                    this.convertVideoToGif();
+                  }}
+                >
+                  Mint NFT
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+      </>
     ) : (
       <p>Loading...</p>
     );

@@ -150,7 +150,13 @@ function CreateStream({ account, contract }) {
           placeholder="streamKey"
         /> */}
         <div className="cs-left-container">
-          <video className="cs-video" ref={videoEl} controls />
+          <video
+            className="cs-video"
+            ref={videoEl}
+            controls
+            height="500px"
+            width="500px"
+          />
           <div className="cs-btns">
             <button className="cs-button" onClick={onButtonClick}>
               Start

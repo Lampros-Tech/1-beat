@@ -12,6 +12,7 @@ import AllNfts from "./components/nft/AllNfts";
 import MakeSchedule from "./components/schedulestreams/MakeSchedule";
 import SingleUser from "./components/users/SingleUser";
 import Profile from "./components/users/Profile";
+import StreamPlay from "./components/users/generalblocks/StreamPlay";
 
 /********************* CSS CLASS ********************/
 import "./index.css";
@@ -26,6 +27,7 @@ import onebeat from "./artifacts/contracts/OneBeat.sol/OneBeat.json";
 
 import metamask from "./components/mm.png";
 import coinbase from "./components/wc.png";
+import CreateNft from "./components/users/generalblocks/CreateNft";
 
 const contractAddress = "0xaa8bb4F1a0F690012D8aE31bAba41B36B26cfEd9";
 
@@ -214,6 +216,7 @@ function App() {
               path="/all-nfts"
               element={<AllNfts contract={contract} account={account} />}
             />
+            <Route exact path="/stream-play" element={<StreamPlay />} />
             <Route
               exact
               path="/make-schedule"
@@ -229,6 +232,7 @@ function App() {
               path="/profile"
               element={<Profile contract={contract} account={account} />}
             />
+            <Route exact path="/create-nft" element={<CreateNft />} />
           </Routes>
         </div>
       </Router>

@@ -51,7 +51,7 @@ function AllStreams({ account, contract }) {
                 <div className="stream-img">
                   <div className="stream-img-main">
                     <a>
-                      <img src={inde[0]} alt="" />
+                      <img src={inde[0]} alt="" crossOrigin="anonymous" />
                     </a>
                   </div>
                 </div>

@@ -60,6 +60,7 @@ function Profile({ account, contract }) {
                 alt="user-profile"
                 width="128px"
                 height="128px"
+                crossOrigin="anonymous"
               ></img>
             </div>
             <div className="profile-info">

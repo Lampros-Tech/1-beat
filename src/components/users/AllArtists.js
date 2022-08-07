@@ -45,6 +45,7 @@ function AllArtists({ account, contract }) {
                     alt="video_cover"
                     height="100%"
                     width="100%"
+                    crossOrigin="anonymous"
                   />
                   <div className="au-middle-p">
                     <div class="au-middle">
