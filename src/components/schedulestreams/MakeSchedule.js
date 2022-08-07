@@ -3,10 +3,13 @@ import "./MakeSchedule.scss";
 import { create, CID } from "ipfs-http-client";
 import { useDropzone } from "react-dropzone";
 import { useState, useRef } from "react";
+import { useEffect } from "react";
 import Upload from "./Wavy_Bus-15_Single-02_prev_ui.png";
 // import Upload from "../styles/man.png";
 import pic from "./loginbg1.png";
 function MakeSchedule() {
+  const [title, setTitle] = useState("");
+
   const [yourImage, setImage] = useState([]);
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     accept: "image/*",
@@ -43,6 +46,8 @@ function MakeSchedule() {
       console.log("Error uploading file: ", error);
     }
   }
+
+  const getScheduledDetails = async (e) => {};
   return (
     <div className="App">
       <div className="image-hero">
@@ -113,18 +118,8 @@ function MakeSchedule() {
               className="ms-input"
               type="text"
               id="name"
-              placeholder="Your Title here"
+              placeholder="Stream Title"
             />
-
-            <div class="column">
-              {/* <label for="start">Start date:</label> */}
-              <input
-                className="ms-input"
-                type="date"
-                id="start"
-                name="trip-start"
-              />
-            </div>
           </div>
 
           <div class="column">
@@ -133,10 +128,19 @@ function MakeSchedule() {
               className="ms-input"
               type="text"
               id="subject"
-              placeholder="Your Discription here"
+              placeholder="Stream Description"
             />
 
             <div class="column">
+              <div class="column">
+                {/* <label for="name">Input</label> */}
+                <input
+                  className="ms-input"
+                  type="text"
+                  id="name"
+                  placeholder="Enter Wallet Address"
+                />
+              </div>
               {/* <label for="contact">Price</label> */}
               <input
                 className="ms-input"
@@ -144,14 +148,26 @@ function MakeSchedule() {
                 id="price"
                 placeholder="Price here"
               />
-              <div class="column">
-                {/* <label for="name">Input</label> */}
+              <div className="date-time">
+                {/* <div className="date-time"> */}
+                <label for="start" className="start">
+                  Start date:
+                </label>
                 <input
-                  className="ms-input"
-                  type="text"
-                  id="name"
-                  placeholder="Your Title here"
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  value="2018-07-22"
+                  min="2018-01-01"
+                  max="2018-12-31"
                 />
+                {/* </div> */}
+
+                <label for="appt" className="start">
+                  Select a time:
+                </label>
+                <input type="time" id="appt" name="appt" />
+                <input type="submit" />
               </div>
             </div>
           </div>
