@@ -59,7 +59,7 @@ h1 {
 //   font-size: 14px;
 //   font-weight: 400;
 // }
-form {
+form.ms-form {
   width: 100%;
   position: relative;
   margin: 30px auto 0 auto;
@@ -71,28 +71,25 @@ form {
   grid-gap: 20px 30px;
   margin-bottom: 20px;
 }
-label {
-  color: #ffffff;
-  font-size: 14px;
-}
-textarea,
-input {
+
+input.ms-input {
   width: 100%;
-  height: 65px;
+  // height: 65px;
   background: #292929;
-  box-shadow: none;
+  // box-shadow: none;
   outline: none;
   border: 2px solid #292929;
   border-radius: 10px;
   padding: 0 20px;
   color: #ffffff;
   box-sizing: border-box;
-  font-size: 18px;
-  font-family: "Poppins";
+  // font-size: 18px;
+  // font-family: "Poppins";
   margin-bottom: 10px;
 }
-.placeholder {
-  color: white !important;
+::placeholder {
+  color: white;
+  font-size: 1rem;
 }
 textarea {
   resize: none;
@@ -100,7 +97,7 @@ textarea {
 textarea:focus,
 input:focus {
   outline: none;
-  border-color: #6f6df4;
+  border-color: #ff0088;
 }
 .action-button {
   border: none;
