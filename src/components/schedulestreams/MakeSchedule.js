@@ -7,8 +7,11 @@ import { useEffect } from "react";
 import Upload from "./Wavy_Bus-15_Single-02_prev_ui.png";
 // import Upload from "../styles/man.png";
 import pic from "./loginbg1.png";
-function MakeSchedule() {
+function MakeSchedule({ account, contract }) {
   const [title, setTitle] = useState("");
+  const [des, setDes] = useState("");
+  const [rights, setRights] = useState("");
+  const [price, setPrice] = useState();
 
   const [yourImage, setImage] = useState([]);
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -27,27 +30,54 @@ function MakeSchedule() {
   const [profile_image, setProfile_image] = useState();
   const [profile_image_url, setProfile_image_url] = useState();
 
+  const [start_date, setStart_date] = useState();
+
   function reset(e) {
     setProfile_image(null);
-    // console.log(profile_image);
   }
-
+  function startdate(e) {
+    setStart_date(e.target.value);
+  }
+  const [end_date, setEnddate] = useState();
+  function enddate(e) {
+    setEnddate(e.target.value);
+  }
+  const [end_time, setEndtime] = useState();
+  function endtime(e) {
+    setEndtime(e.target.value);
+  }
+  const [start_time, setStarttime] = useState();
+  function starttime(e) {
+    setStarttime(e.target.value);
+  }
   async function UploadImage(e) {
     const file = e.target.files[0];
-    // console.log(file);
     setProfile_image(file);
     try {
       const client = create("https://ipfs.infura.io:5001/api/v0");
       const added = await client.add(file);
       const url = `https://ipfs.infura.io/ipfs/${added.path}`;
       setProfile_image_url(url);
-      console.log(url);
     } catch (error) {
       console.log("Error uploading file: ", error);
     }
   }
 
-  const getScheduledDetails = async (e) => {};
+  const getScheduledDetails = async (e) => {
+    const time1 = start_date + " " + start_time;
+    const time2 = end_date + " " + end_time;
+    const tx = await contract.scheduleStream(
+      account,
+      profile_image_url,
+      title,
+      des,
+      time1,
+      time2,
+      rights,
+      price
+    );
+    tx.wait();
+  };
   return (
     <div className="App">
       <div className="image-hero">
@@ -56,7 +86,7 @@ function MakeSchedule() {
       <div class="container">
         <h1>FORM</h1>
 
-        <form className="ms-form">
+        <section>
           <div class="column">
             {/* <label for="myfile">Cover Image:</label>
             <input type="file" id="myfile" name="myfile"></input> */}
@@ -119,6 +149,7 @@ function MakeSchedule() {
               type="text"
               id="name"
               placeholder="Stream Title"
+              onChange={(event) => setTitle(event.target.value)}
             />
           </div>
 
@@ -129,6 +160,7 @@ function MakeSchedule() {
               type="text"
               id="subject"
               placeholder="Stream Description"
+              onChange={(event) => setDes(event.target.value)}
             />
 
             <div class="column">
@@ -139,6 +171,7 @@ function MakeSchedule() {
                   type="text"
                   id="name"
                   placeholder="Enter Wallet Address"
+                  onChange={(event) => setRights(event.target.value)}
                 />
               </div>
               {/* <label for="contact">Price</label> */}
@@ -147,9 +180,9 @@ function MakeSchedule() {
                 type="number"
                 id="price"
                 placeholder="Price here"
+                onChange={(event) => setPrice(event.target.value)}
               />
               <div className="date-time">
-                {/* <div className="date-time"> */}
                 <label for="start" className="start">
                   Start date:
                 </label>
@@ -157,23 +190,60 @@ function MakeSchedule() {
                   type="date"
                   id="start"
                   name="trip-start"
-                  value="2018-07-22"
-                  min="2018-01-01"
-                  max="2018-12-31"
+                  min="2022-08-07"
+                  max="2022-12-31"
+                  onChange={(e) => {
+                    startdate(e);
+                  }}
                 />
-                {/* </div> */}
-
                 <label for="appt" className="start">
                   Select a time:
                 </label>
-                <input type="time" id="appt" name="appt" />
-                <input type="submit" />
+                <input
+                  type="time"
+                  id="appt"
+                  name="appt"
+                  onChange={(e) => {
+                    starttime(e);
+                  }}
+                />
+              </div>
+              <div className="date-time">
+                <label for="start" className="start">
+                  End date:
+                </label>
+                <input
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  min="2022-08-07"
+                  max="2022-12-31"
+                  onChange={(e) => {
+                    enddate(e);
+                  }}
+                />
+                <label for="appt" className="start">
+                  Select end time:
+                </label>
+                <input
+                  type="time"
+                  id="appt"
+                  name="appt"
+                  onChange={(e) => {
+                    endtime(e);
+                  }}
+                />
               </div>
             </div>
           </div>
 
-          <button className="action-button">Submit</button>
-        </form>
+          <button
+            className="action-button"
+            onClick={(e) => getScheduledDetails()}
+          >
+            Submit
+          </button>
+        </section>
       </div>
     </div>
   );
