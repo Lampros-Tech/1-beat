@@ -30,50 +30,55 @@ function AllStreams({ account, contract }) {
   }, [contract]);
 
   if (isLoading) {
-    console.log("Loading");
+    return "Loading";
   }
-
-  return (
-    <>
-      <div className="stream-main-container">
-        <div className="stream-header">
-          <h1 className="t-header">AllStream</h1>
-          <p className="p-header">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            temporibus sed voluptatem dicta quas vitae quibusdam omnis similique
-            optio sint esse quisquam
-          </p>
-        </div>
-        <div className="stream-main-content">
-          {data.map((inde) => {
-            return (
-              <div className="stream-content">
-                <div className="stream-img">
-                  <div className="stream-img-main">
-                    <a>
-                      <img src={inde[0]} alt="" />
-                    </a>
+  if (data.length > 0) {
+    return (
+      <>
+        <div className="stream-main-container">
+          <div className="stream-header">
+            <h1 className="t-header">AllStream</h1>
+            <p className="p-header">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+              temporibus sed voluptatem dicta quas vitae quibusdam omnis
+              similique optio sint esse quisquam
+            </p>
+          </div>
+          <div className="stream-main-content">
+            {data.map((inde) => {
+              return (
+                <div className="stream-content">
+                  <div className="stream-img">
+                    <div className="stream-img-main">
+                      <a>
+                        <img src={inde[0]} alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="stream-user">
+                    <div className="stream-img-name">
+                      <img src={inde[3]} alt="" />
+                      <span>{inde[2]}</span>
+                    </div>
+                  </div>
+                  <div className="stream-title">
+                    <h4>{inde[1]}</h4>
+                  </div>
+                  <div className="stream-date">
+                    <span>Date:22/8/2022</span>
                   </div>
                 </div>
-                <div className="stream-user">
-                  <div className="stream-img-name">
-                    <img src={inde[3]} alt="" />
-                    <span>{inde[2]}</span>
-                  </div>
-                </div>
-                <div className="stream-title">
-                  <h4>{inde[1]}</h4>
-                </div>
-                <div className="stream-date">
-                  <span>Date:22/8/2022</span>
-                </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+    );
+  } else {
+    {
+      console.log("no");
+    }
+  }
 }
 
 export default AllStreams;

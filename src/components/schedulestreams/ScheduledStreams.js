@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 function ScheduledStreams({ account, contract }) {
   const [isLoading, setLoading] = React.useState(true);
   const [data, setData] = useState([]);
+  const [id, setId] = useState("");
 
   const getScheduledData = async (e) => {
     let number = await contract.getTotalScheduledNumber();
@@ -16,10 +17,16 @@ function ScheduledStreams({ account, contract }) {
       const des = stream.s_description;
       const time1 = stream.starttime;
       const time2 = stream.endtime;
-      data.push([cover, title, des, time1, time2]);
+      data.push([cover, title, des, time1, time2, i]);
     }
     setData(data);
     setLoading(false);
+  };
+
+  const onButtonClick = async () => {
+    const tx = await contract.bookSchdeuledStream(id, account);
+    tx.wait();
+    console.log(id);
   };
 
   useEffect(() => {
@@ -28,34 +35,47 @@ function ScheduledStreams({ account, contract }) {
   }, [contract]);
 
   if (isLoading) {
-    console.log("Loading");
+    return "Loading";
   }
-  return (
-    <div className="main">
-      <div className="stream-title">
-        <h1>Scheduled Streams</h1>
-      </div>
-      {data.map((inde) => {
-        return (
-          <div className="card-container">
-            <div className="main-card">
-              <div className="stream-image">
-                <img src={inde[0]} alt="" className="cover-img" />
-              </div>
-              <div className="card-title">
-                <h1>{inde[1]}</h1>
-                <span className="card-description">{inde[2]}</span>
-                <div className="date-time">
-                  <p>Start Time : {inde[3]}</p>
+
+  if (data.length > 0) {
+    return (
+      <div className="main">
+        <div className="stream-title">
+          <h1>Scheduled Streams</h1>
+        </div>
+        {data.map((inde) => {
+          return (
+            <div className="card-container">
+              <div className="main-card">
+                <div className="stream-image">
+                  <img src={inde[0]} alt="" className="cover-img" />
                 </div>
+                <div className="card-title">
+                  <h1>{inde[1]}</h1>
+                  <span className="card-description">{inde[2]}</span>
+                  <div className="date-time">
+                    <p>Start Time : {inde[3]}</p>
+                  </div>
+                  <div className="date-time">
+                    <p>End Time : {inde[4]}</p>
+                  </div>
+                </div>
+                <button
+                  className="book-button"
+                  onClick={() => onButtonClick(setId(inde[5]))}
+                >
+                  BOOK NOW
+                </button>
               </div>
-              <button className="book-button">BOOK NOW</button>
             </div>
-          </div>
-        );
-      })}
-    </div>
-  );
+          );
+        })}
+      </div>
+    );
+  } else {
+    console.log("no");
+  }
 }
 
 export default ScheduledStreams;
