@@ -70,10 +70,10 @@ function Profile({ account, contract }) {
 
               <div className="profile-nft-info">
                 <p>
-                  Total <span className="nft-span">{no_nft}</span>
+                  <span className="nft-span">{no_nft} NFTs</span>
                 </p>
                 <p>
-                  Total <span className="nft-span">{no_stream}</span>
+                  <span className="nft-span">{no_stream} Streams</span>
                 </p>
               </div>
               <div className="profile-info-button">

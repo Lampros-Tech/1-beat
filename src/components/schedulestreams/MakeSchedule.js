@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import Upload from "./Wavy_Bus-15_Single-02_prev_ui.png";
 // import Upload from "../styles/man.png";
 import pic from "./loginbg1.png";
+import { upload } from "@testing-library/user-event/dist/upload";
 function MakeSchedule({ account, contract }) {
   const [title, setTitle] = useState("");
   const [des, setDes] = useState("");
@@ -79,13 +80,12 @@ function MakeSchedule({ account, contract }) {
     tx.wait();
   };
   return (
-    <div className="App">
+    <div className="ms-main-container">
       <div className="image-hero">
-        <img src={pic} alt="" />
+        <img className="ms-hero-image" src={pic} alt="" />
       </div>
+      <h1 className="ms-h1">Make Schedule For Your Stream</h1>
       <div class="container">
-        <h1>FORM</h1>
-
         <section>
           <div class="column">
             {/* <label for="myfile">Cover Image:</label>
