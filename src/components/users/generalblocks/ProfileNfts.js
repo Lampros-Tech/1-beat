@@ -24,8 +24,8 @@ function ProfileNfts() {
                   <h6>1 year ago</h6>
                 </div>
               </div>
-              <div className="ps-nfts-buy-btn">
-                <button className="ps-nfts-buy-button">Buy NFT</button>
+              <div className="ps-nfts-ASK-btn">
+                <button className="ps-nfts-ASK-button">ASK NFT</button>
               </div>
             </div>
           </div>
@@ -47,8 +47,8 @@ function ProfileNfts() {
                   <h6>1 year ago</h6>
                 </div>
               </div>
-              <div className="ps-nfts-buy-btn">
-                <button className="ps-nfts-buy-button">Buy NFT</button>
+              <div className="ps-nfts-ASK-btn">
+                <button className="ps-nfts-ASK-button">ASK NFT</button>
               </div>
             </div>
           </div>
@@ -70,8 +70,8 @@ function ProfileNfts() {
                   <h6>1 year ago</h6>
                 </div>
               </div>
-              <div className="ps-nfts-buy-btn">
-                <button className="ps-nfts-buy-button">Buy NFT</button>
+              <div className="ps-nfts-ASK-btn">
+                <button className="ps-nfts-ASK-button">ASK NFT</button>
               </div>
             </div>
           </div>

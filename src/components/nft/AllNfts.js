@@ -26,8 +26,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -44,8 +44,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -62,8 +62,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -80,8 +80,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -98,8 +98,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -116,8 +116,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -134,8 +134,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -152,8 +152,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -170,8 +170,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
@@ -188,8 +188,8 @@ function AllNfts() {
                   <img src={img} alt="" />
                   <span>user name</span>
                 </div>
-                <button type="submit" className="nft-btn" alt="Buy Now">
-                  Buy NFT
+                <button type="submit" className="nft-btn" alt="ASK Now">
+                  ASK NFT
                 </button>
               </div>
             </div>
